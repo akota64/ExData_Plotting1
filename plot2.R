@@ -19,6 +19,6 @@ dat$Time <- as.POSIXct(strptime(paste(dat$Date,dat$Time),format ="%Y-%m-%d %H:%M
 dat$Global_active_power<-as.numeric(dat$Global_active_power)
 
 ## Generate plot and save into plot2.png
-png(file="plot2.png",width = 504, height = 504)
+png(file="plot2.png",width = 480, height = 480)
 with(dat, plot(Time, Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)"))
 dev.off()

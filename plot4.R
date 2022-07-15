@@ -23,7 +23,7 @@ for (x in 3:length(dat)){
 
 
 ## Generates plot and save into plot4.png
-png(file="plot4.png",width = 504, height = 504)
+png(file="plot4.png",width = 480, height = 480)
 
 ## Sets plot dimensions
 par(mfcol=c(2,2))

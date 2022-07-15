@@ -21,7 +21,7 @@ dat$Sub_metering_2<-as.numeric(dat$Sub_metering_2)
 dat$Sub_metering_3<-as.numeric(dat$Sub_metering_3)
 
 ## Generate plot and save into plot3.png
-png(file="plot3.png",width = 504, height = 504)
+png(file="plot3.png",width = 480, height = 480)
 plot(dat$Time,dat$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
 lines(dat$Time,dat$Sub_metering_2, col="red")
 lines(dat$Time,dat$Sub_metering_3, col="blue")

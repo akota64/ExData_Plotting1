@@ -19,7 +19,7 @@ dat$Time <- strptime(paste(dat$Date,dat$Time),format ="%Y-%m-%d %H:%M:%S" )
 dat$Global_active_power<-as.numeric(dat$Global_active_power)
 
 ## Plot generated and saved as png
-png(file="plot1.png",width = 504, height = 504)
+png(file="plot1.png",width = 480, height = 480)
 hist(dat$Global_active_power, xlab = "Global Active Power (kilowatts)", ylab = "Frequency", 
      main = "Global Active Power", col = "red")
 dev.off()
